@@ -1,6 +1,6 @@
 package zoo;
 
-public class Penguin extends Animal implements Oviparous{
+public class Penguin extends Animal implements Oviparous {
     public Penguin(String name, int age) {
         super(name, age);
         super.type = Type.BIRDS;

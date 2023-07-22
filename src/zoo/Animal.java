@@ -10,7 +10,8 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public void makeSound() {}
+    public void makeSound() {
+    }
 
     public Type getType() {
         return type;

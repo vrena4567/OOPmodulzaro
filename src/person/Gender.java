@@ -5,6 +5,7 @@ public enum Gender {
     MALE("férfi", "male");
     private String magyarul;
     private String angolul;
+
     Gender(String magyarul, String angolul) {
         this.magyarul = magyarul;
         this.angolul = angolul;

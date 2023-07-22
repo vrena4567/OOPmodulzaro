@@ -1,6 +1,6 @@
 package zoo;
 
-public class Dog extends Animal implements Vivipaorus{
+public class Dog extends Animal implements Vivipaorus {
     public Dog(String name, int age) {
         super(name, age);
         super.type = Type.MAMMAL;

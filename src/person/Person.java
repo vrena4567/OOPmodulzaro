@@ -23,6 +23,7 @@ public class Person {
     public static int getPopulation() {
         return populationCounter;
     }
+
     public void addFriends(Person person) {
         this.friends.add(person.getName());
     }

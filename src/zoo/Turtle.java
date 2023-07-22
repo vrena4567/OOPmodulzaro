@@ -1,6 +1,6 @@
 package zoo;
 
-public class Turtle extends Animal implements Oviparous{
+public class Turtle extends Animal implements Oviparous {
     public Turtle(String name, int age) {
         super(name, age);
         super.type = Type.REPTILE;

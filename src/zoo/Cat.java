@@ -1,6 +1,6 @@
 package zoo;
 
-public class Cat extends Animal implements Vivipaorus{
+public class Cat extends Animal implements Vivipaorus {
 
     public Cat(String name, int age) {
         super(name, age);

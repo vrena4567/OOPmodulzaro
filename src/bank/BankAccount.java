@@ -12,9 +12,10 @@ public class BankAccount {
         this.accountName = accountName;
         this.accountNumber = accountNumber;
     }
+
     public void withdraw(int amount) {
         try {
-            if(this.balance>=amount) {
+            if (this.balance >= amount) {
                 this.balance -= amount;
             } else {
                 throw new exception();
@@ -23,9 +24,10 @@ public class BankAccount {
             System.out.println(e.getMessage());
         }
     }
-    public void transfer (BankAccount bankAccount, int amount) {
+
+    public void transfer(BankAccount bankAccount, int amount) {
         try {
-            if(this.balance>=amount) {
+            if (this.balance >= amount) {
                 this.balance -= amount;
                 bankAccount.deposit(amount);
             } else {
@@ -35,16 +37,17 @@ public class BankAccount {
             System.out.println(e.getMessage());
         }
     }
+
     public static void isValidAccountNumber(BankAccount bankAccount) {
- //      List<Integer> accountNumbers = new ArrayList<>();
- //      for (int i = 0; i < bankAccount.getAccountNumber().length(); i++) {
- //          accountNumbers.add(bankAccount.getAccountNumber().indexOf(i));
- //      }
- //      System.out.println(accountNumbers.toString());
- //      for (String actualNumber : bankAccount.getAccountNumber().toString() {
- //          accountNumbers
- //      }
- //      if(bankAccount.getAccountNumber())
+        //      List<Integer> accountNumbers = new ArrayList<>();
+        //      for (int i = 0; i < bankAccount.getAccountNumber().length(); i++) {
+        //          accountNumbers.add(bankAccount.getAccountNumber().indexOf(i));
+        //      }
+        //      System.out.println(accountNumbers.toString());
+        //      for (String actualNumber : bankAccount.getAccountNumber().toString() {
+        //          accountNumbers
+        //      }
+        //      if(bankAccount.getAccountNumber())
     }
 
     public String getAccountName() {

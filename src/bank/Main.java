@@ -10,7 +10,7 @@ public class Main {
         System.out.println(reniSzamla.getBalance());
         reniSzamla.withdraw(500);
         System.out.println(reniSzamla.getBalance());
-        reniSzamla.transfer(almaSzamla,1500);
+        reniSzamla.transfer(almaSzamla, 1500);
         System.out.println("Utalás után:");
         System.out.println(reniSzamla.getAccountName() + ": " + reniSzamla.getBalance());
         System.out.println(almaSzamla.getAccountName() + ": " + almaSzamla.getBalance());

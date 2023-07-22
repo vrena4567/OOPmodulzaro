@@ -1,6 +1,6 @@
 package zoo;
 
-public class Eagle extends Animal implements Oviparous, Flyable{
+public class Eagle extends Animal implements Oviparous, Flyable {
     public Eagle(String name, int age) {
         super(name, age);
         super.type = Type.BIRDS;
