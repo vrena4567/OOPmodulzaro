@@ -1,2 +1,7 @@
-package zoo;public enum Type {
+package zoo;
+
+public enum Type {
+    MAMMAL,
+    BIRDS,
+    REPTILE;
 }
