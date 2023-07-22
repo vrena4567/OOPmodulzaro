@@ -39,15 +39,23 @@ public class BankAccount {
     }
 
     public static void isValidAccountNumber(BankAccount bankAccount) {
-        //      List<Integer> accountNumbers = new ArrayList<>();
-        //      for (int i = 0; i < bankAccount.getAccountNumber().length(); i++) {
-        //          accountNumbers.add(bankAccount.getAccountNumber().indexOf(i));
-        //      }
-        //      System.out.println(accountNumbers.toString());
-        //      for (String actualNumber : bankAccount.getAccountNumber().toString() {
-        //          accountNumbers
-        //      }
-        //      if(bankAccount.getAccountNumber())
+        List<String> szamlaszamok = new ArrayList<>();
+        for (int i = 0; i < bankAccount.getAccountNumber().length(); i++) {
+            szamlaszamok.add(bankAccount.getAccountNumber().substring(i, i+1));
+        }
+        int sum = 0;
+        for (String actualNumber : szamlaszamok) {
+            sum += Integer.parseInt(actualNumber);
+        }
+        int elso = Integer.parseInt(szamlaszamok.get(0));
+        int utolso = Integer.parseInt(szamlaszamok.get(szamlaszamok.size()-1));
+        boolean elsoOszthato = elso % 2 == 0;
+        boolean utolsoOszthato = utolso % 2 == 0;
+        if(sum >= 20 && elsoOszthato == utolsoOszthato) {
+            System.out.println("Valid Account");
+        } else {
+            System.out.println("Invalid Account");
+        }
     }
 
     public String getAccountName() {
